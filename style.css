@@ -1,0 +1,172 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+
+/* Contenedor principal de la bandera */
+
+.bandera {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+/* Cada una de las tres columnas */
+
+.columna {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* Parte superior con los controles */
+
+.controles {
+    height: 140px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.controles h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+.controles input {
+    width: 80%;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+
+.controles p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Rectángulos de la bandera */
+
+.franja {
+    height: 350px;
+    border: 1px solid #ccc;
+}
+
+
+/* Color inicial verde */
+
+.verde {
+    background-color: #009900;
+}
+
+
+/* Franja blanca */
+
+.blanca {
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Color inicial rojo */
+
+.roja {
+    background-color: #990000;
+}
+
+
+/* Imagen del escudo */
+
+.blanca img {
+    width: 55%;
+    max-width: 220px;
+    height: auto;
+}
+
+
+/* Información de los integrantes */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+
+footer p {
+    margin: 8px;
+}
+
+
+/* Diseño para celulares */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+
+    .bandera {
+        flex-direction: column;
+    }
+
+
+    .columna {
+        width: 100%;
+    }
+
+
+    .franja {
+        height: 250px;
+    }
+
+
+    .controles {
+        height: auto;
+        padding: 20px 0;
+    }
+
+
+    .blanca img {
+        width: 35%;
+    }
+
+}
+

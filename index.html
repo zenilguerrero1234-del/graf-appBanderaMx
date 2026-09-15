@@ -1,0 +1,117 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bandera de México</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>Bandera de México</h1>
+
+        <section class="bandera">
+
+            <!-- Columna verde -->
+            <div class="columna">
+
+                <div class="controles">
+                    <h2>Esperanza</h2>
+
+                    <input
+                        type="range"
+                        id="sliderVerde"
+                        min="0"
+                        max="255"
+                        value="0"
+                    >
+
+                    <p id="codigoVerde">#009900</p>
+                </div>
+
+                <div
+                    class="franja verde"
+                    id="franjaVerde">
+                </div>
+
+            </div>
+
+
+            <!-- Columna blanca -->
+            <div class="columna">
+
+                <div class="controles">
+                    <h2>Unidad</h2>
+
+                    <p>#FFFFFF</p>
+                </div>
+
+                <div class="franja blanca">
+
+                    <!-- Escudo de México -->
+                    <img
+                        src="bandera.jpg"
+                        alt="Escudo Nacional de México"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Columna roja -->
+            <div class="columna">
+
+                <div class="controles">
+                    <h2>Sangre de nuestros héroes nacionales</h2>
+
+                    <input
+                        type="range"
+                        id="sliderRojo"
+                        min="0"
+                        max="255"
+                        value="0"
+                    >
+
+                    <p id="codigoRojo">#990000</p>
+                </div>
+
+                <div
+                    class="franja roja"
+                    id="franjaRoja">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Integrantes del equipo -->
+        <footer>
+
+            <p>
+                Juan Pablo Sanchez Garcia -
+                N. de control: 24200101
+            </p>
+
+            <p>
+                Eduardo Zenil Guerrero -
+                N. de control: 25200365
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
